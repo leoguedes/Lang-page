@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+    /* height: 100vh; */
+    background: url(vinho.jpg) no-repeat fixed center;
+    background-size: cover;
+    
+}
+
+#texto-chamativo h1, h2{
+    margin-bottom: 25px;
+}
+
+#texto-chamativo h4{
+    margin-bottom: 15px;
+}
+
+#texto-chamativo{
+    margin: 50px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgb(210 210 210 / 75%);
+    margin-top: 180px;
+          
+}
+
+.campo-formulario{
+    /* padding-left: 20px; */
+}
+
+.campo-formulario label,
+.campo-formulario input,
+.campo-formulario select {
+    display: block;
+    width: 100%;
+    border: none;
+    margin-top: 4px;
+      
+}
+
+.campo-formulario input, select{
+    margin-bottom: 12px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+p{
+    margin-bottom: 12px;
+}
+
+.radio label,
+.checkbox label{
+    display: block;
+}
+
+.radio input,
+.checkbox input{
+    margin-right: 4px;
+}
+
+form{
+    padding: 150px 32px;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-weight: bold;
+}
+
+
+.caixa{
+    display: flex;
+}
+
+
+#lado-direto{
+    background-color: darkgoldenrod;
+}
+
+#lado-esquerdo{
+    
+  
+}
+
+
+#botao{
+    background: rgb(224, 156, 9);
+    float: right;
+    width: 80px;
+    height: 32px;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+
+/* Configuração do botão, para mudar de cor, ao passar o mouse */
+#botao:hover{
+    background: rgb(71, 228, 8);
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+
+}
+/* abaixo fica o redimensionamento da página, conforme cada tamanho que altera. */
+@media screen and (max-width: 953px) {
+    .caixa{
+        display: inline;
+    
+  }
+}
+
+@media screen and (max-width: 953px) {
+    .checkbox p{
+        margin-top: 8px;
+    
+  }
+}
+
+@media screen and (max-width: 767px) {
+    #container{
+        flex-direction: column
+    
+  }
+}
+
+
+@media screen and (max-width: 371px) {
+    .checkbox p{
+        margin-top: 8px;
+ }       
+}
+
+@media screen and (max-width: 354px) {
+    #texto-chamativo{
+        margin: 50px;
+        padding: 30px;
+
+ }
+}
+@media screen and (max-width: 349px) {
+    #texto-chamativo{
+        margin: 40px;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 331px) {
+    #texto-chamativo{
+        margin: 30px;
+        padding: 30px;
+    }
+}
+  @media screen and (max-width: 320px) {
+    #texto-chamativo{
+        margin: 7px;
+        padding: 25px; 
+           
+  }
+}
+
+

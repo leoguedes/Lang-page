@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 0</title>
+
+    <link rel="stylesheet" href="./index.css">
+
+    
+</head>
+
+<body>
+    
+    <div id="container">
+        
+
+        <div id="lado-esquerdo">
+            <div id="texto-chamativo">
+                <h1>
+                    Assine hoje mesmo e receba o seu primeiro kit de vinhos gratuitamente!
+                </h1>
+                <h2>
+                    Que tal passar deliciosos momentos saboreando as nosssas  seleções de vinhos  especialmente  escolhidas para voce?
+                </h2>
+                <h4>
+                    Benefícios
+                </h4>
+
+                <ul>
+                    <li>Benefício 1 - Vinhos especialmentes selecionados  pelos  nosssos  especialistas.</li>
+                    <li>Benefício 2 - Não precisa pagar frete!</li>
+                    <li>Benefício 3 - Revista mensal  que vai junto com os seus vinhos contendo notícias  e receitas  deliciosas.</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="lado-direto">
+           <form id="formulario" 
+                 onsubmit="event.preventDefault();"
+                 action="./mensagem.html">
+                <p>
+                Preencha e envie o formulário abaixo e em breve nossa equipe de atendimento entrará em contato.
+                </p>
+
+                <div class="campo-formulario">
+                    <label>Por favor nos diga  o seu nome completo:</label>
+                    <input type="text" name="campo-nome" placeholder="Preencha o seu nome completo">
+                </div> 
+
+                <div class="campo-formulario">
+                        <label>Por favor, nos diga o seu e-mail:</label>
+                        <input type="text" name="campo-email" id="campo-email" placeholder="@">
+                </div>
+                
+                <div class="campo-formulario">
+                    <label>Tipo de vinho que prefere:</label>
+                    <select>
+                        <option disabled selected hidden>Selecione uma opção</option>
+                        <option>Espumante</option>
+                        <option>Vinho Tinto</option>
+                        <option>Vinho Rosé</option>
+                    </select>
+
+                </div>    
+
+                <div class="caixa">
+
+                    <div class="radio">
+                        <p>Qual o melhor dia para entrarmos em contato com você?</p>
+                        
+                        <label><input type="radio" name="dia">Segunda-Feira</label>                    
+                        <label><input type="radio" name="dia">Terça-Feira</label>                    
+                        <label><input type="radio" name="dia">Quarta-Feira</label>                    
+                        <label><input type="radio" name="dia">Quinta-Feira</label>                    
+                        <label><input type="radio" name="dia">Sexta-Feira</label>                    
+                        <label><input type="radio" name="dia">Sábado</label>                    
+                        <label><input type="radio" name="dia">Domingo</label>
+                    </div>
+
+                    <div class="checkbox">
+                        <p>Qual o melhor horário para entramos em contato com você?</p>
+                        
+                        <label><input type="checkbox">Manhã</label>                    
+                        <label><input type="checkbox">Tarde</label>                    
+                        <label><input type="checkbox">Noite</label>                       
+                    </div>               
+                    
+                </div>
+
+                <button id="botao">Enviar!</button>
+
+            </form>
+
+            
+        </div>
+
+    </div>
+
+
+    <script src="./index.js"></script>
+    <noscript>
+        Desculpe, o seu navegador
+    </noscript>
+
+</body>
+</html>
